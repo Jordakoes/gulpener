@@ -3,11 +3,14 @@
     font-family: "Gilroy", sans-serif;
 }
 
-
 /* TODO: Spacing between the sections
 is not even because the headings have margins
 either remove the margins, or keep them 
 the same height for all of the sections */
+
+/* TODO: _onclick for all elements that do something when clicked
+eg: clicking the red beer color gives it a black border color
+and saves it to an array of an object? */
 
 /* Spacing between sections */
 section {
@@ -217,9 +220,17 @@ h3 {
     grid-gap: 20px;
   }
 
+  /* TODO: Grid containers don't need to repeat themselves
+  were declaring different styles for the same class */
+
   .beer-1 img, .beer-2 img, .beer-3 img {
     width: 100%;
     border: 5px solid white;
+  }
+
+  /* Transition for the beers */
+  .beer-1, .beer-2, .beer-3 {
+    transition: .3s ease-in-out;
   }
   
   .beer-1 { 
@@ -296,6 +307,24 @@ h3 {
       grid-area: beer-3; 
     }
 
+/* Zoom in on image testing */
+  .beer-1:hover, .beer-2:hover, .beer-3:hover {
+    opacity: 0.8;
+  }
+
+  .beer-1:focus, .beer-2:focus, .beer-3:focus {
+    border: 5px solid black;
+  }
+
+  /* .beer-1, #test {
+    overflow: hidden;
+    transition: .3s ease-in-out;
+  }
+
+  .beer-1:hover #test {
+    transform: scale(1.3);
+  } */
+
 /* Opmerkingen */
 textarea {
     display: block;
@@ -338,5 +367,5 @@ textarea:focus {
 .start-brouwen:hover {
     background-color: #DF1835;
     color: #f2f2f2;
-    border: none;
+    border: 2px solid #DF1835;
 }
