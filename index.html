@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brouw je eigen bier - Gulpener brouwlokaal</title>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    
+    <section id="intro">
+        <img class="center-img" src="/images/bottle.svg" alt="">
+        <h1>brouw je eigen bier</h1>
+        <div class="powered-by">
+            <h3>powered by</h3>
+            <img class="logo" src="/images/logo.png" alt="">
+        </div>
+    </section>
+
+    <section id="kleur">
+        <h2>kleur</h2>
+        <div class="grid-container-kleur">
+            <div class="white">
+                <div class="illustration">
+                    <div class="bg"></div>
+                </div>
+                wit
+            </div>
+            <div class="blonde">
+                <div class="illustration">
+                    <div class="bg"></div>
+                </div>
+                blond
+            </div>
+            <div class="amber">
+                <div class="illustration">
+                    <div class="bg"></div>
+                </div>
+                amber
+            </div>
+            <div class="red">
+                <div class="illustration">
+                    <div class="bg"></div>
+                </div>
+                rood
+            </div>
+            <div class="brown">
+                <div class="illustration">
+                    <div class="bg"></div>
+                </div>
+                bruin
+            </div>
+            <div class="black">
+                <div class="illustration">
+                    <div class="bg"></div>
+                </div>
+                zwart
+            </div>
+          </div>
+    </section>
+
+    <section id="alcohol">
+        <h2>ALCOHOLPERCENTAGE</h2>
+        <div class="slidecontainer">
+            <input type="range" min="3" max="12" value="6" class="slider" id="myRange">
+            <p>Gekozen percentage: <span id="demo"></span></p>
+        </div>
+    </section>
+
+    <section id="soort">
+        <h2>soort</h2>
+        <div class="grid-container-soort">
+            <div class="beer-1">
+                <img src="/images/smaak.png" alt="">
+            </div>
+            <div class="beer-2">
+                <img src="/images/smaak.png" alt="">
+            </div>
+            <div class="beer-3">
+                <img src="/images/smaak.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="gulpener-bier">
+        <h2>gulpener bier</h2>
+        <div class="grid-container-gulpener-bier">
+            <div class="beer-1">
+                <img src="/images/smaak.png" alt="">
+            </div>
+            <div class="beer-2">
+                <img src="/images/smaak.png" alt="">
+            </div>
+            <div class="beer-3">
+                <img src="/images/smaak.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="extra-ingredienten">
+        <h2>extra ingredienten</h2>
+        <div class="grid-container-extra-ingredienten">
+            <div class="beer-1">
+                <img src="/images/smaak.png" alt="">
+            </div>
+            <div class="beer-2">
+                <img src="/images/smaak.png" alt="">
+            </div>
+            <div class="beer-3">
+                <img src="/images/smaak.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="opmerkingen">
+        <h2>opmerkingen</h2>
+        <textarea placeholder="Type hier je bericht..." name="opmerkingen" id="comments" cols="30" rows="10"></textarea>
+        <img class="center-img" src="/images/boiler.png" alt="">
+        <button class="start-brouwen">start het brouwen</button>
+    </section>
+   
+    
+    <script src="/scripts/slider.js"></script>
+</body>
+</html>
