@@ -1,0 +1,342 @@
+* { 
+    background-color: #F8EEE4;
+    font-family: "Gilroy", sans-serif;
+}
+
+
+/* TODO: Spacing between the sections
+is not even because the headings have margins
+either remove the margins, or keep them 
+the same height for all of the sections */
+
+/* Spacing between sections */
+section {
+    padding: 5% 0 5% 0;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 8%;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3.5vw;
+}
+
+h3 {
+    font-size: 2.5vw
+}
+
+#intro h1 {
+    margin-bottom: 0;
+}
+
+#intro h3 {
+    color: #DF1835;
+    font-family: "DINPro", sans-serif;
+    margin-right: 1.5%;
+    text-transform: lowercase
+}
+
+.powered-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.powered-by img {
+    height: 3vw;
+}
+
+/* Section: Kleur */
+#kleur h2 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* grid for kleur */
+.grid-container-kleur {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ". white blonde amber. " 
+    ". red brown black .";
+
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+}
+  
+.white { grid-area: white; }
+  
+.blonde { grid-area: blonde; }
+  
+.amber { grid-area: amber; }
+  
+.red { grid-area: red; }
+  
+.brown { grid-area: brown; }
+  
+.black { grid-area: black; }
+
+/* illustrations */
+.illustration {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    background-color: #F8EEE4;
+    border: .5vw solid white;
+
+    margin: 65% 0 8% 0;
+
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    /*TODO: - values to fix the positioning of the wave */
+    left: -2;
+    right: -2;
+    top: -2;
+    bottom: -2;
+    background: url("https://d1uyinv54o97jy.cloudfront.net/assets/wave-d2e295e21dcc67d695843460baf8f36742ce871c0ef561c7fe09022cea26b2e5.png");
+    background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+    animation: animatedBackground 25s linear infinite;
+    border-radius: 50%;
+
+    animation-play-state: paused;
+}
+
+.bg:hover {
+    animation-play-state: running;
+}
+
+/* Colors of the beer colors */
+.white .illustration {
+    background-color: #D2CA85;
+}
+
+.blonde .illustration {
+    background-color: #CBB24A;
+}
+
+.amber .illustration {
+    background-color: #9D531C;
+}
+
+.red .illustration {
+    background-color: #A92E24;
+}
+
+.brown .illustration {
+    background-color: #753D24;
+}
+
+.black .illustration {
+    background-color: #1E130F;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+/* Section alcohol */
+
+/* Slider */
+.slidecontainer {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 18px;
+    /* border-radius: 5px; */
+    background: #A27F48;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border: 3px solid white;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: #A27F48;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #A27F48;
+    cursor: pointer;
+  }
+
+/* Soort */
+.grid-container-soort {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". beer-1 beer-2 beer-3 .";
+
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+
+    grid-gap: 20px;
+  }
+
+  .beer-1 img, .beer-2 img, .beer-3 img {
+    width: 100%;
+    border: 5px solid white;
+  }
+  
+  .beer-1 { 
+      grid-area: beer-1;
+    }
+  
+  .beer-2 { 
+      grid-area: beer-2; 
+    }
+  
+  .beer-3 { 
+      grid-area: beer-3; 
+    }
+
+/* Gulpener bier */
+.grid-container-gulpener-bier {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". beer-1 beer-2 beer-3 .";
+
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+
+    grid-gap: 20px;
+  }
+
+  .beer-1 img, .beer-2 img, .beer-3 img {
+    width: 100%;
+  }
+  
+  .beer-1 { 
+      grid-area: beer-1;
+    }
+  
+  .beer-2 { 
+      grid-area: beer-2; 
+    }
+  
+  .beer-3 { 
+      grid-area: beer-3; 
+    }
+
+/* Extra ingredienten */
+.grid-container-extra-ingredienten{
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". beer-1 beer-2 beer-3 .";
+
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+
+    grid-gap: 20px;
+  }
+
+  .beer-1 img, .beer-2 img, .beer-3 img {
+    width: 100%;
+  }
+  
+  .beer-1 { 
+      grid-area: beer-1;
+    }
+  
+  .beer-2 { 
+      grid-area: beer-2; 
+    }
+  
+  .beer-3 { 
+      grid-area: beer-3; 
+    }
+
+/* Opmerkingen */
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: #DDCEBB;
+    border: 5px solid white;
+    padding: 20px;
+
+    font-size: 1em;
+    /* TODO: Check how to use the Gilroy font... */
+    /* font-family: inherit; */
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* Button styling */
+.start-brouwen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+
+    border: 2px solid black;
+    text-transform: uppercase;
+    padding: 2%;
+
+    transition: .3s ease-in-out;
+}
+
+.start-brouwen:focus {
+    outline: none;
+    /* TODO: Find alternative for the opacity change... */
+    opacity: .5;
+}
+
+.start-brouwen:hover {
+    background-color: #DF1835;
+    color: #f2f2f2;
+    border: none;
+}
