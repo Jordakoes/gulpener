@@ -27,37 +27,37 @@
     <section id="kleur">
         <h2>kleur</h2>
         <div class="grid-container-kleur">
-            <div class="white">
+            <div class="white" onclick="whiteBeer()">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 wit
             </div>
-            <div class="blonde">
+            <div class="blonde" onclick="blondeBeer()">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 blond
             </div>
-            <div class="amber">
+            <div class="amber" onclick="amberBeer()">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 amber
             </div>
-            <div class="red">
+            <div class="red" onclick="redBeer()"">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 rood
             </div>
-            <div class="brown">
+            <div class="brown" onclick="brownBeer()">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 bruin
             </div>
-            <div class="black">
+            <div class="black" onclick="blackBeer()">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
@@ -124,10 +124,13 @@
         <h2>opmerkingen</h2>
         <textarea placeholder="Type hier je bericht..." name="opmerkingen" id="comments" cols="30" rows="10"></textarea>
         <img class="center-img" src="/images/boiler.png" alt="">
-        <button class="start-brouwen">start het brouwen</button>
+        <!-- <button class="start-brouwen">start het brouwen</button> -->
+        <div class="flex-center">
+            <a class="start-brouwen" href="/pages/yourbeer.html">start het brouwen</a>
+        </div>
     </section>
    
-    
     <script src="/scripts/slider.js"></script>
+    <script src="/scripts/ls-input.js"></script>
 </body>
 </html>
