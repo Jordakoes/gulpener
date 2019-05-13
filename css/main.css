@@ -1,6 +1,6 @@
 * { 
     background-color: #F8EEE4;
-    font-family: "Gilroy", sans-serif;
+    font-family: Gilroy-ExtraBold;
 }
 
 /* TODO: Spacing between the sections
@@ -49,6 +49,7 @@ h3 {
 
 #intro h3 {
     color: #DF1835;
+    /* TODO: Webfont DINpro or fallback font needed here */
     font-family: "DINPro", sans-serif;
     margin-right: 1.5%;
     text-transform: lowercase
@@ -225,12 +226,13 @@ h3 {
 
   .beer-1 img, .beer-2 img, .beer-3 img {
     width: 100%;
-    border: 5px solid white;
   }
 
-  /* Transition for the beers */
+  /* Transition for the zoom animation + borders */
   .beer-1, .beer-2, .beer-3 {
     transition: .3s ease-in-out;
+    border: 5px solid white;
+    opacity: .9;
   }
   
   .beer-1 { 
@@ -309,21 +311,12 @@ h3 {
 
 /* Zoom in on image testing */
   .beer-1:hover, .beer-2:hover, .beer-3:hover {
-    opacity: 0.8;
+    opacity: 1;
   }
 
   .beer-1:focus, .beer-2:focus, .beer-3:focus {
     border: 5px solid black;
   }
-
-  /* .beer-1, #test {
-    overflow: hidden;
-    transition: .3s ease-in-out;
-  }
-
-  .beer-1:hover #test {
-    transform: scale(1.3);
-  } */
 
 /* Opmerkingen */
 textarea {
@@ -368,4 +361,18 @@ textarea:focus {
     background-color: #DF1835;
     color: #f2f2f2;
     border: 2px solid #DF1835;
+}
+
+
+/* Hover zoom */
+.beer-1, .beer-2, .beer-3 {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+img {
+  transition: transform .5s ease;
+}
+
+.beer-1:hover img, .beer-2:hover img, .beer-3:hover img {
+  transform: scale(1.2);
 }
