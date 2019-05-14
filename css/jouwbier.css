@@ -1,0 +1,114 @@
+#intro h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Minder ruimte tussen intro en etiket grid */
+#intro {
+    padding: 0;
+}
+
+#etiket {
+    padding-top: 0;
+}
+
+/* Etiket */
+.grid-container-etiket {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". jouw-bier-etiket kleur ." 
+    ". jouw-bier-etiket alcohol ." 
+    ". jouw-bier-etiket soort ." 
+    ". jouw-bier-etiket extra-ingredient ." 
+    ". jouw-bier-etiket opmerking .";
+  }
+
+  .jouw-bier-etiket, .kleur, .alcohol, .soort, .extra-ingredient, .opmerking {
+      border: 5px solid white;
+      background-color: #DDCEBB;
+      /* filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5); */
+
+  }
+
+  .jouw-bier-etiket { 
+      grid-area: jouw-bier-etiket;
+      border-right: 0px solid white;
+    }
+  
+  .kleur { 
+      grid-area: kleur;
+    }
+  
+  .alcohol { 
+      grid-area: alcohol; 
+      border-top: 0px solid white;
+    }
+  
+  .soort { 
+      grid-area: soort; 
+      border-top: 0px solid white;
+    }
+  
+  .extra-ingredient { 
+      grid-area: extra-ingredient; 
+      border-top: 0px solid white;
+    }
+  
+  .opmerking { 
+      grid-area: opmerking; 
+      border-top: 0px solid white;
+    }
+
+/* Button */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #buttons {
+      padding-top: 0;
+  }
+
+  .grid-container-buttons {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". terug deel verder .";
+
+    grid-gap: 20px;
+
+    justify-items: center;
+  }
+  
+  .deel { grid-area: deel; }
+  
+  .verder { grid-area: verder; }
+  
+  .terug { grid-area: terug; }
+  
+  .start-brouwen {
+    padding: 5%;
+    width: 90%;
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid black;
+    color: black;
+    transition: .3s ease-in-out;
+  }
+  
+  .start-brouwen:focus {
+    outline: none;
+    /* TODO: Find alternative for the opacity change... */
+    opacity: .5;
+  }
+  
+  .start-brouwen:hover {
+    background-color: #DF1835;
+    color: #f2f2f2;
+    border: 2px solid #DF1835;
+  }

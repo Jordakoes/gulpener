@@ -6,6 +6,8 @@ function whiteBeer() {
     // resetting previous selection
     document.querySelector(".blonde .bg").style.border = ".5vw solid white";
     document.querySelector(".amber .bg").style.border = ".5vw solid white";
+    //TODO: Misschien querySelectorAll(".bg").style.border = ".5vw solid white";
+    // inplaats van alle andere borders resetten? 
 }
 
 function blondeBeer() {

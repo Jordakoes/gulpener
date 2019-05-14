@@ -3,9 +3,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!-- Gilroy webfont -->
+    <link rel="stylesheet" type="text/css" href="/MyFontsWebfontsKit.css">
+    <!-- Personal css -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/jouwbier.css">
+    <title>Jouw Bier - Gulpener</title>
 </head>
 <body>
+    <section id="intro">
+        <img class="center-img" src="/images/bottle.svg" alt="">
+        <h1>jouw bier</h1>
+    </section>
+
+    <section id="etiket">
+        <div class="grid-container-etiket">
+            <div class="jouw-bier-etiket">
+                <img src="/etiket-fles.svg" alt="">
+            </div>
+            <div class="kleur">kleur</div>
+            <div class="alcohol">alco</div>
+            <div class="soort">soort</div>
+            <div class="extra-ingredient">ingredient</div>
+            <div class="opmerking">opmer</div>
+          </div>
+    </section>
+
+    <section id="buttons">
+        <div class="grid-container-buttons flex-center">
+            <a class="terug start-brouwen" href="/index.html">Ga terug</a>
+            <a class="deel start-brouwen" href="/pages/yourbeer.html">Deel je bier</a>
+            <a class="verder start-brouwen" href="/pages/yourbeer.html">Plan je afspraak</a>
+        </div>
+    </section>
 
     <div style="font-size: 4vw" id="result"></div>
     <script src="/scripts/ls-output.js"></script>

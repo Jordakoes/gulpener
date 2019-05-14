@@ -1,0 +1,341 @@
+#intro h1 {
+    margin-bottom: 0;
+}
+
+#intro h3 {
+    color: #DF1835;
+    /* TODO: Webfont DINpro or fallback font needed here */
+    font-family: "DINPro", sans-serif;
+    margin-right: 1.5%;
+    text-transform: lowercase
+}
+
+.powered-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.powered-by img {
+    height: 3vw;
+}
+
+/* Section: Kleur */
+#kleur h2 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* grid for kleur */
+.grid-container-kleur {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ". white blonde amber. " 
+    ". red brown black .";
+
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+}
+  
+.white { grid-area: white; }
+  
+.blonde { grid-area: blonde; }
+  
+.amber { grid-area: amber; }
+  
+.red { grid-area: red; }
+  
+.brown { grid-area: brown; }
+  
+.black { grid-area: black; }
+
+/* illustrations */
+.illustration {
+  height: 8.5vw;
+  width: 8.5vw;
+  border-radius: 50%;
+  background-color: #F8EEE4; 
+
+  margin: 65% 0 8% 0;
+  position: relative;
+}
+
+/* .white .bg {
+  border: .5vw solid red;
+} */
+
+.bg {
+  border: .5vw solid white;
+  position: absolute;
+  /*TODO: - values to fix the positioning of the wave */
+  left: -2;
+  right: -2;
+  top: -2;
+  bottom: -2;
+  background: url("https://d1uyinv54o97jy.cloudfront.net/assets/wave-d2e295e21dcc67d695843460baf8f36742ce871c0ef561c7fe09022cea26b2e5.png");
+  background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+  animation: animatedBackground 25s linear infinite;
+  border-radius: 50%;
+
+  animation-play-state: paused;
+}
+
+.bg:hover {
+    animation-play-state: running;
+}
+
+/* Colors of the beer colors */
+.white .illustration {
+    background-color: #D2CA85;
+}
+
+.blonde .illustration {
+    background-color: #CBB24A;
+}
+
+.amber .illustration {
+    background-color: #9D531C;
+}
+
+.red .illustration {
+    background-color: #A92E24;
+}
+
+.brown .illustration {
+    background-color: #753D24;
+}
+
+.black .illustration {
+    background-color: #1E130F;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+/* Section alcohol */
+
+/* Slider */
+.slidecontainer {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 18px;
+    /* border-radius: 5px; */
+    background: #A27F48;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border: 3px solid white;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: #A27F48;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #A27F48;
+    cursor: pointer;
+  }
+
+/* Soort */
+.grid-container-soort {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". beer-1 beer-2 beer-3 .";
+
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+
+    grid-gap: 20px;
+  }
+
+  /* TODO: Grid containers don't need to repeat themselves
+  were declaring different styles for the same class */
+
+  .beer-1 img, .beer-2 img, .beer-3 img {
+    width: 100%;
+  }
+
+  /* Transition for the zoom animation + borders */
+  .beer-1, .beer-2, .beer-3 {
+    transition: .3s ease-in-out;
+    border: 5px solid white;
+    opacity: .9;
+  }
+  
+  .beer-1 { 
+      grid-area: beer-1;
+    }
+  
+  .beer-2 { 
+      grid-area: beer-2; 
+    }
+  
+  .beer-3 { 
+      grid-area: beer-3; 
+    }
+
+/* Gulpener bier */
+.grid-container-gulpener-bier {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". beer-1 beer-2 beer-3 .";
+
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+
+    grid-gap: 20px;
+  }
+
+  .beer-1 img, .beer-2 img, .beer-3 img {
+    width: 100%;
+  }
+  
+  .beer-1 { 
+      grid-area: beer-1;
+    }
+  
+  .beer-2 { 
+      grid-area: beer-2; 
+    }
+  
+  .beer-3 { 
+      grid-area: beer-3; 
+    }
+
+/* Extra ingredienten */
+.grid-container-extra-ingredienten{
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". beer-1 beer-2 beer-3 .";
+
+    align-items: center;
+    justify-items: center;
+
+    text-align: center;
+
+    grid-gap: 20px;
+  }
+
+  .beer-1 img, .beer-2 img, .beer-3 img {
+    width: 100%;
+  }
+  
+  .beer-1 { 
+      grid-area: beer-1;
+    }
+  
+  .beer-2 { 
+      grid-area: beer-2; 
+    }
+  
+  .beer-3 { 
+      grid-area: beer-3; 
+    }
+
+/* Zoom in on image testing */
+  .beer-1:hover, .beer-2:hover, .beer-3:hover {
+    opacity: 1;
+  }
+
+  .beer-1:focus, .beer-2:focus, .beer-3:focus {
+    border: 5px solid black;
+  }
+
+/* Opmerkingen */
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: #DDCEBB;
+    border: 5px solid white;
+    padding: 20px;
+
+    font-size: 1em;
+    /* TODO: Check how to use the Gilroy font... */
+    /* font-family: inherit; */
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* Button1 styling */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-brouwen {
+  margin-top: 8%;
+  padding: 2%;
+  width: 25%;
+  font-size: 2vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid black;
+  color: black;
+  transition: .3s ease-in-out;
+}
+
+.start-brouwen:focus {
+  outline: none;
+  /* TODO: Find alternative for the opacity change... */
+  opacity: .5;
+}
+
+.start-brouwen:hover {
+  background-color: #DF1835;
+  color: #f2f2f2;
+  border: 2px solid #DF1835;
+}
+
+/* Hover zoom */
+.beer-1, .beer-2, .beer-3 {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+img {
+  transition: transform .5s ease;
+}
+
+.beer-1:hover img, .beer-2:hover img, .beer-3:hover img {
+  transform: scale(1.2);
+}
