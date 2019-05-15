@@ -65,10 +65,12 @@
     </section>
 
     <section id="alcohol">
-        <h2>ALCOHOLPERCENTAGE</h2>
+        <h2>alcoholpercentage</h2>
         <div class="slidecontainer">
-            <input type="range" min="3" max="12" value="6" class="slider" id="myRange">
-            <p>Gekozen percentage: <span id="demo"></span></p>
+            <input class="slider" id="slider" type="range" min="3" max="12" step="1" oninput="sliderChange(this.value)">
+            <output id="output"></output>
+            <!-- <input type="range" min="3" max="12" class="slider" id="myRange">
+            <p>Gekozen percentage: <span id="demo"></span></p> -->
         </div>
     </section>
 
@@ -127,6 +129,9 @@
             <a class="start-brouwen" href="/pages/yourbeer.html">start het brouwen</a>
         </div>
     </section>
+
+    <!-- <input id="slider" type="range" min="50" max="100" step="10" oninput="sliderChange(this.value)">
+    <output id="output"></output> -->
    
     <script src="/scripts/slider.js"></script>
     <script src="/scripts/ls-input.js"></script>
