@@ -43,7 +43,7 @@
                 </div>
                 <p>amber</p>
             </div>
-            <div class="red" onclick="redBeer()"">
+            <div class="red" onclick="redBeer()">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
@@ -68,10 +68,7 @@
         <h2>alcoholpercentage</h2>
         <div class="slidecontainer">
             <input class="slider" id="slider" type="range" min="3" max="12" step="1" oninput="sliderChange(this.value)">
-            
             <p>Gekozen percentage: <output id="output">4</output> %</p>
-            <!-- <input type="range" min="3" max="12" class="slider" id="myRange">
-            <p>Gekozen percentage: <span id="demo"></span></p> -->
         </div>
     </section>
 
@@ -124,17 +121,14 @@
     <section id="opmerkingen">
         <h2>opmerkingen</h2>
         <textarea placeholder="Type hier je bericht..." name="opmerkingen" id="comments" cols="30" rows="10"></textarea>
-        <img class="center-img" src="/images/boiler.png" alt="">
-        <!-- <button class="start-brouwen">start het brouwen</button> -->
+        <img class="center-img" src="/images/boiler.png" alt="closing image of boiler">
         <div class="flex-center">
             <a class="start-brouwen" href="/pages/yourbeer.html">start het brouwen</a>
         </div>
     </section>
-
-    <!-- <input id="slider" type="range" min="50" max="100" step="10" oninput="sliderChange(this.value)">
-    <output id="output"></output> -->
    
     <script src="/scripts/slider.js"></script>
     <script src="/scripts/ls-input.js"></script>
+    
 </body>
 </html>
