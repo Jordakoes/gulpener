@@ -25,3 +25,5 @@ function amberBeer () {
     document.querySelector(".white .bg").style.border = ".5vw solid white";
     document.querySelector(".blonde .bg").style.border = ".5vw solid white";
 }
+
+// TODO: add other colors here!
