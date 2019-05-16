@@ -191,11 +191,10 @@
   }
 
   /* Transition for the zoom animation + borders */
-  .soort-1, .soort-2, .soort-3 {
+  /* .soort-1, .soort-2, .soort-3 {
     transition: .3s ease-in-out;
-    /* border: 5px solid white; */
     opacity: .9;
-  }
+  } */
   
   .soort-1 { 
       grid-area: soort-1;
@@ -368,6 +367,10 @@ img {
   /* FIXME: JS Overwrites the border size, fix this in js file!*/
   .bg, .slider, .beer-1, .beer-2, .beer-3, .slider::-webkit-slider-thumb, textarea, .soort-1, .soort-2, .soort-3, .ingredient-1, .ingredient-2, .ingredient-3 {
     border: 1.5vw solid white;
+  }
+
+  .clicked-border { 
+    border: 1.5vw solid red;
   }
 
   /* Slider */

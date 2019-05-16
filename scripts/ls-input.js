@@ -45,21 +45,50 @@ document.querySelector(".soort-3").onclick = function() {
     localStorage.setItem("beerSoort", "soort3");
 }
 
+//keuze gulpener bier (wordt niet getoond op etiket pagina!)
+
+// TODO: deze gegevens worden niet getoond enkel opgeslagen, nog niet gebruikt!
+document.querySelector(".beer-1").onclick = function() {
+    this.classList.toggle('clicked-border');
+    localStorage.setItem("gulpenerBier", "bier1");
+}
+
+document.querySelector(".beer-2").onclick = function() {
+    this.classList.toggle('clicked-border');
+    localStorage.setItem("gulpenerBier", "bier2");
+}
+
+document.querySelector(".beer-3").onclick = function() {
+    this.classList.toggle('clicked-border');
+    localStorage.setItem("gulpenerBier", "bier3");
+}
+
 //keuze ingredient
 document.querySelector(".ingredient-1").onclick = function() {
     this.classList.toggle('clicked-border');
     localStorage.setItem("extraIngredient", "ingredient1");
 }
 
-document.querySelector(".ingredient-2").onclick = function() {
-    this.classList.toggle('clicked-border');
-    localStorage.setItem("extraIngredient", "ingredient2");
-}
+ document.querySelector(".ingredient-2").onclick = function() {
+     this.classList.toggle('clicked-border');
+     localStorage.setItem("extraIngredient", "ingredient2");
+ }
 
 document.querySelector(".ingredient-3").onclick = function() {
     this.classList.toggle('clicked-border');
     localStorage.setItem("extraIngredient", "ingredient3");
 }
+
+// document.querySelector(".ingredient-2").addEventListener("touchstart" , function() {
+//     this.classList.toggle('clicked-border');
+//     localStorage.setItem("extraIngredient", "ingredient2");
+// })
+
+//opmerking
+document.querySelector(".start-brouwen").addEventListener("click", function (){
+        var user = document.getElementById("textarea").value ;
+        localStorage.setItem("opmerking", user) ;
+    })
 
 // first try shizzles
 // Checking what beer color is selected
