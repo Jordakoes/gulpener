@@ -125,8 +125,12 @@
   }
 
   /* FIXME: Remove all borders except for here! */
-  .bg, .slider, .beer-1, .beer-2, .beer-3, .slider::-webkit-slider-thumb, textarea {
+  .bg, .slider, .beer-1, .beer-2, .beer-3, .slider::-webkit-slider-thumb, textarea, .soort-1, .soort-2, .soort-3, .ingredient-1, .ingredient-2, .ingredient-3{
     border: .5vw solid white;
+  }
+
+  .clicked-border { 
+    border: .5vw solid red;
   }
   
   .slider {
@@ -169,7 +173,7 @@
     display: grid;
     grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
     grid-template-rows: 1fr;
-    grid-template-areas: ". beer-1 beer-2 beer-3 .";
+    grid-template-areas: ". soort-1 soort-2 soort-3 .";
 
     align-items: center;
     justify-items: center;
@@ -182,27 +186,27 @@
   /* TODO: Grid containers don't need to repeat themselves
   were declaring different styles for the same class */
 
-  .beer-1 img, .beer-2 img, .beer-3 img {
+  .soort-1 img, .soort-2 img, .soort-3 img {
     width: 100%;
   }
 
   /* Transition for the zoom animation + borders */
-  .beer-1, .beer-2, .beer-3 {
+  .soort-1, .soort-2, .soort-3 {
     transition: .3s ease-in-out;
     /* border: 5px solid white; */
     opacity: .9;
   }
   
-  .beer-1 { 
-      grid-area: beer-1;
+  .soort-1 { 
+      grid-area: soort-1;
     }
   
-  .beer-2 { 
-      grid-area: beer-2; 
+  .soort-2 { 
+      grid-area: soort-2; 
     }
   
-  .beer-3 { 
-      grid-area: beer-3; 
+  .soort-3 { 
+      grid-area: soort-3; 
     }
 
 /* Gulpener bier */
@@ -241,7 +245,7 @@
     display: grid;
     grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
     grid-template-rows: 1fr;
-    grid-template-areas: ". beer-1 beer-2 beer-3 .";
+    grid-template-areas: ". ingredient-1 ingredient-2 ingredient-3 .";
 
     align-items: center;
     justify-items: center;
@@ -251,20 +255,20 @@
     grid-gap: 20px;
   }
 
-  .beer-1 img, .beer-2 img, .beer-3 img {
+  .ingredient-1 img, .ingredient-2 img, .ingredient-3 img {
     width: 100%;
   }
   
-  .beer-1 { 
-      grid-area: beer-1;
+  .ingredient-1 { 
+      grid-area: ingredient-1;
     }
   
-  .beer-2 { 
-      grid-area: beer-2; 
+  .ingredient-2 { 
+      grid-area: ingredient-2; 
     }
   
-  .beer-3 { 
-      grid-area: beer-3; 
+  .ingredient-3 { 
+      grid-area: ingredient-3; 
     }
 
 /* Zoom in on image testing */
@@ -272,9 +276,9 @@
     opacity: 1;
   }
 
-  .beer-1:focus, .beer-2:focus, .beer-3:focus {
+  /* .beer-1:focus, .beer-2:focus, .beer-3:focus {
     border: 5px solid black;
-  }
+  } */
 
 /* Opmerkingen */
 textarea {
@@ -328,7 +332,7 @@ textarea:focus {
 }
 
 /* Hover zoom */
-.beer-1, .beer-2, .beer-3 {
+.beer-1, .beer-2, .beer-3, .soort-1, .soort-2, .soort-3, .ingredient-1, .ingredient-2, .ingredient-3 {
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
@@ -336,7 +340,7 @@ img {
   transition: transform .5s ease;
 }
 
-.beer-1:hover img, .beer-2:hover img, .beer-3:hover img {
+.beer-1:hover img, .beer-2:hover img, .beer-3:hover img, .soort-1:hover img, .soort-2:hover img, .soort-3:hover img, .ingredient-1:hover img, .ingredient-2:hover img, .ingredient-3:hover img {
   transform: scale(1.2);
 }
 
@@ -351,7 +355,7 @@ img {
       ". brown black .";
   }
 
-    /* illustrations */
+  /* illustrations */
   .illustration {
     height: 20vw;
     width:  20vw;
@@ -362,7 +366,7 @@ img {
   }
 
   /* FIXME: JS Overwrites the border size, fix this in js file!*/
-  .bg, .slider, .beer-1, .beer-2, .beer-3, .slider::-webkit-slider-thumb, textarea {
+  .bg, .slider, .beer-1, .beer-2, .beer-3, .slider::-webkit-slider-thumb, textarea, .soort-1, .soort-2, .soort-3, .ingredient-1, .ingredient-2, .ingredient-3 {
     border: 1.5vw solid white;
   }
 
@@ -383,9 +387,9 @@ img {
     grid-template-columns: .1fr 1fr .1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    ". beer-1 ."
-    ". beer-2 ."
-    ". beer-3 .";
+    ". soort-1 ."
+    ". soort-2 ."
+    ". soort-3 .";
   }
 
   .grid-container-gulpener-bier {
@@ -401,9 +405,9 @@ img {
     grid-template-columns: .1fr 1fr .1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    ". beer-1 ."
-    ". beer-2 ."
-    ". beer-3 .";
+    ". ingredient-1 ."
+    ". ingredient-2 ."
+    ". ingredient-3 .";
   }
 
   /* Start brouwen button */

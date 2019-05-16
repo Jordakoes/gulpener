@@ -25,37 +25,37 @@
     <section id="kleur">
         <h2>kleur</h2>
         <div class="grid-container-kleur">
-            <div class="white" onclick="whiteBeer()">
+            <div class="white">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 <p>wit</p> 
             </div>
-            <div class="blonde" onclick="blondeBeer()">
+            <div class="blonde">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 <p>blonde</p>
             </div>
-            <div class="amber" onclick="amberBeer()">
+            <div class="amber">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 <p>amber</p>
             </div>
-            <div class="red" onclick="redBeer()"">
+            <div class="red">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 <p>rood</p>
             </div>
-            <div class="brown" onclick="brownBeer()">
+            <div class="brown">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
                 <p>bruin</p>
             </div>
-            <div class="black" onclick="blackBeer()">
+            <div class="black">
                 <div class="illustration">
                     <div class="bg"></div>
                 </div>
@@ -68,10 +68,7 @@
         <h2>alcoholpercentage</h2>
         <div class="slidecontainer">
             <input class="slider" id="slider" type="range" min="3" max="12" step="1" oninput="sliderChange(this.value)">
-            
             <p>Gekozen percentage: <output id="output">4</output> %</p>
-            <!-- <input type="range" min="3" max="12" class="slider" id="myRange">
-            <p>Gekozen percentage: <span id="demo"></span></p> -->
         </div>
     </section>
 
@@ -79,14 +76,14 @@
         <h2>soort</h2>
         <div class="grid-container-soort">
             <!-- TODO: Verander beer-1,2,3 naar optie-1,2,3! -->
-            <div class="beer-1">
-                <img src="/images/smaak.png" alt="">
+            <div class="soort-1">
+                <img src="/images/soort-frisfruitig.png" alt="">
             </div>
-            <div class="beer-2">
-                <img src="/images/smaak.png" alt="">
+            <div class="soort-2">
+                <img src="/images/soort-lichtbitter.png" alt="">
             </div>
-            <div class="beer-3">
-                <img src="/images/smaak.png" alt="">
+            <div class="soort-3">
+                <img src="/images/soort-rijkzwaar.png" alt="">
             </div>
         </div>
     </section>
@@ -109,14 +106,14 @@
     <section id="extra-ingredienten">
         <h2>extra ingredienten</h2>
         <div class="grid-container-extra-ingredienten">
-            <div class="beer-1">
-                <img src="/images/smaak.png" alt="">
+            <div class="ingredient-1">
+                <img src="/images/ingredient-fruitig.png" alt="">
             </div>
-            <div class="beer-2">
-                <img src="/images/smaak.png" alt="">
+            <div class="ingredient-2">
+                <img src="/images/ingredient-kruidig.png" alt="">
             </div>
-            <div class="beer-3">
-                <img src="/images/smaak.png" alt="">
+            <div class="ingredient-3">
+                <img src="/images/ingredient-complex.png" alt="">
             </div>
         </div>
     </section>
@@ -125,14 +122,10 @@
         <h2>opmerkingen</h2>
         <textarea placeholder="Type hier je bericht..." name="opmerkingen" id="comments" cols="30" rows="10"></textarea>
         <img class="center-img" src="/images/boiler.png" alt="">
-        <!-- <button class="start-brouwen">start het brouwen</button> -->
         <div class="flex-center">
             <a class="start-brouwen" href="/pages/yourbeer.html">start het brouwen</a>
         </div>
     </section>
-
-    <!-- <input id="slider" type="range" min="50" max="100" step="10" oninput="sliderChange(this.value)">
-    <output id="output"></output> -->
    
     <script src="/scripts/slider.js"></script>
     <script src="/scripts/ls-input.js"></script>
