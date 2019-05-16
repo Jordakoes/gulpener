@@ -79,16 +79,31 @@ document.querySelector(".ingredient-3").onclick = function() {
     localStorage.setItem("extraIngredient", "ingredient3");
 }
 
-// document.querySelector(".ingredient-2").addEventListener("touchstart" , function() {
-//     this.classList.toggle('clicked-border');
-//     localStorage.setItem("extraIngredient", "ingredient2");
-// })
-
 //opmerking
 document.querySelector(".start-brouwen").addEventListener("click", function (){
         var user = document.getElementById("textarea").value ;
         localStorage.setItem("opmerking", user) ;
-    })
+})
+
+//making variables for the values that are being displayed (eg: kleur, alcoholpercentage, soort, gekozen ingredient and opmerking)
+var colorSelected = localStorage.getItem("beerColor");
+var alcoholSelected = localStorage.getItem("sliderValue"); 
+var soortSelected = localStorage.getItem("beerSoort");
+var ingredientSelected = localStorage.getItem("extraIngredient");
+
+//console logging all values
+console.log(colorSelected);
+console.log(alcoholSelected);
+console.log(soortSelected);
+console.log(ingredientSelected);
+
+// var colorSelected = localStorage.getItem("beerColor");
+// console.log(colorSelected);
+
+// document.querySelector(".ingredient-2").addEventListener("touchstart" , function() {
+//     this.classList.toggle('clicked-border');
+//     localStorage.setItem("extraIngredient", "ingredient2");
+// })
 
 // first try shizzles
 // Checking what beer color is selected
