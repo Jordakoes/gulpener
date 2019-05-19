@@ -16,10 +16,4 @@ console.log(alcoholSelected);
 console.log(soortSelected);
 console.log(ingredientSelected);
 
-//check if the input is null or blank
-if(colorSelected == null) {
-    // do something
-    alert("FRICKING FRICK YOU GUYS");
- }
-
 localStorage.clear();

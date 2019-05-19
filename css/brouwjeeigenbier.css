@@ -17,13 +17,13 @@
 }
 
 .powered-by img {
-    height: 3vw;
+  height: 3vw;
 }
 
 /* Section: Kleur */
 #kleur h2 {
-    text-transform: uppercase;
-    margin-bottom: 0;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 /* grid for kleur */
@@ -129,15 +129,24 @@
     border: .5vw solid white;
   }
 
+  /* Active styling for the selection items */
   .clicked-border { 
-    border: .5vw solid red;
+    border: .5vw solid black;
+  }
+
+  .play-animation {
+    animation-play-state: running;
+  }
+
+  .active {
+    border: .5vw solid black;
+    animation-play-state: running;
   }
   
   .slider {
     -webkit-appearance: none;
     width: 100%;
     height: 2vw;
-    /* border-radius: 5px; */
     background: #A27F48;
     outline: none;
     opacity: 0.7;
@@ -174,28 +183,15 @@
     grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
     grid-template-rows: 1fr;
     grid-template-areas: ". soort-1 soort-2 soort-3 .";
-
     align-items: center;
     justify-items: center;
-
     text-align: center;
-
     grid-gap: 20px;
   }
-
-  /* TODO: Grid containers don't need to repeat themselves
-  were declaring different styles for the same class */
 
   .soort-1 img, .soort-2 img, .soort-3 img {
     width: 100%;
   }
-
-  /* Transition for the zoom animation + borders */
-  /* .soort-1, .soort-2, .soort-3 {
-    transition: .3s ease-in-out;
-    opacity: .9;
-  } */
-  
   .soort-1 { 
       grid-area: soort-1;
     }
@@ -296,6 +292,7 @@ textarea {
 
 textarea:focus {
     outline: none;
+    border: .5vw solid black;
 }
 
 /* Button1 styling */
@@ -340,7 +337,51 @@ img {
 }
 
 .beer-1:hover img, .beer-2:hover img, .beer-3:hover img, .soort-1:hover img, .soort-2:hover img, .soort-3:hover img, .ingredient-1:hover img, .ingredient-2:hover img, .ingredient-3:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+
+/* Popup overlay */
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+
+  border: .5vw solid black;
+  background-color: #F8EEE4;
+  color: black;
+  padding: 2% 2% 6% 2%;
+
+  text-align: center;
+}
+
+#text h2 {
+  font-size: 3.5vw;
+}
+
+#text p {
+  font-size: 2vw;
+}
+
+#text .start-brouwen {
+  font-size: 2vw;
 }
 
 /* Mobile view */
@@ -369,8 +410,12 @@ img {
     border: 1.5vw solid white;
   }
 
+  textarea:focus {
+    border: 1.5vw solid black;
+  }
+
   .clicked-border { 
-    border: 1.5vw solid red;
+    border: 1.5vw solid black;
   }
 
   /* Slider */
@@ -418,5 +463,10 @@ img {
     font-size: 3vw;
     width: 40%;
     margin-top: 2em;
+  }
+
+  .active {
+    border: 1.5vw solid black;
+    animation-play-state: running;
   }
 }

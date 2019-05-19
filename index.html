@@ -123,9 +123,17 @@
         <textarea placeholder="Type hier je bericht..." name="opmerkingen" id="textarea" cols="30" rows="10"></textarea>
         <img class="center-img" src="/images/boiler.png" alt="">
         <div class="flex-center">
-            <a class="start-brouwen" href="/pages/yourbeer.html">start het brouwen</a>
+            <a class="start-brouwen" onclick="openPopup()">start het brouwen</a>
         </div>
     </section>
+
+    <div id="overlay">
+        <div id="text">
+            <h2>Let op!</h2>
+            <p>Een of meerdere belangrijke keuzes zijn overgeslagen.</p>
+            <a class="start-brouwen" onclick="closePopup()">Stom van mij, ik pas het aan. Sorry he</a>
+        </div>
+    </div>
    
     <script src="/scripts/slider.js"></script>
     <script src="/scripts/ls-input.js"></script>

@@ -12,6 +12,10 @@
     padding-top: 0;
 }
 
+.etiket-fontsize {
+  font-size: 1.8vw;
+}
+
 /* Etiket */
 .grid-container-etiket {
     display: grid;
@@ -121,7 +125,7 @@
   .grid-container-etiket {
     display: grid;
     grid-template-columns: .1fr 1fr .1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr .3fr .3fr .3fr .3fr 1fr;
     grid-template-areas: 
     ". jouw-bier-etiket ." 
     ". kleur ." 
@@ -152,5 +156,9 @@
   .start-brouwen {
     font-size: 3vw;
     margin-top: 1em;
+  }
+
+  .etiket-fontsize {
+    font-size: 4vw;
   }
 }
