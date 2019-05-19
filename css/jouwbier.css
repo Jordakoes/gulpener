@@ -125,7 +125,7 @@
   .grid-container-etiket {
     display: grid;
     grid-template-columns: .1fr 1fr .1fr;
-    grid-template-rows: 2fr .3fr .3fr .3fr .3fr 1fr;
+    grid-template-rows: 2fr .3fr .3fr .3fr .3fr auto;
     grid-template-areas: 
     ". jouw-bier-etiket ." 
     ". kleur ." 
@@ -138,6 +138,10 @@
   .jouw-bier-etiket { 
     border-right: 5px solid white;
     border-bottom: 0px solid white;
+  }
+
+  #opmerking {
+    padding: 5%;
   }
 
   /* Buttons */
