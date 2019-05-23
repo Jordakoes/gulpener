@@ -7,9 +7,12 @@ the same height for all of the sections */
 eg: clicking the red beer color gives it a black border color
 and saves it to an array of an object? */
 
+/* Load in Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
+
 * { 
   /* background-color: #F8EEE4; */
-  font-family: Gilroy-ExtraBold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html, body {
@@ -29,7 +32,7 @@ section {
     margin-top: 8%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;

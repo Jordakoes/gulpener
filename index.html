@@ -22,6 +22,17 @@
         </div>
     </section>
 
+    <!-- Contactformulier -->
+    <!-- <iframe src="https://gulpener.recras.nl/contactformulier/index/id/12" style="width:100%;height:auto" frameborder=0 scrolling="auto" id="recras"></iframe>
+    <script>
+    window.addEventListener('message', function(e) {
+        var origin = event.origin || event.originalEvent.origin;
+        if (origin.match(/gulpener\.recras\.nl/)) {
+            document.getElementById('recras').style.height = e.data.iframeHeight + 'px';
+        }
+    });
+    </script> -->
+
     <section id="kleur">
         <h2>kleur</h2>
         <div class="grid-container-kleur">
@@ -77,13 +88,13 @@
         <div class="grid-container-soort">
             <!-- TODO: Verander beer-1,2,3 naar optie-1,2,3! -->
             <div class="soort-1">
-                <img src="/images/soort-frisfruitig.png" alt="">
+                <img src="/images/ff.webp" alt="">
             </div>
             <div class="soort-2">
-                <img src="/images/soort-lichtbitter.png" alt="">
+                <img src="/images/lb.webp" alt="">
             </div>
             <div class="soort-3">
-                <img src="/images/soort-rijkzwaar.png" alt="">
+                <img src="/images/rz.webp" alt="">
             </div>
         </div>
     </section>
@@ -107,13 +118,13 @@
         <h2>extra ingredienten</h2>
         <div class="grid-container-extra-ingredienten">
             <div class="ingredient-1">
-                <img src="/images/ingredient-fruitig.webp" alt="">
+                <img src="/images/ff2.webp" alt="">
             </div>
             <div class="ingredient-2">
-                <img src="/images/ingredient-kruidig.webp" alt="">
+                <img src="/images/kr.webp" alt="">
             </div>
             <div class="ingredient-3">
-                <img src="/images/ingredient-complex.webp" alt="">
+                <img src="/images/co.webp" alt="">
             </div>
         </div>
     </section>
@@ -130,8 +141,8 @@
     <div id="overlay">
         <div id="text">
             <h2>Let op!</h2>
-            <p>Een of meerdere belangrijke keuzes zijn overgeslagen.</p>
-            <a class="start-brouwen" onclick="closePopup()">Stom van mij, ik pas het aan. Sorry he</a>
+            <p>Niet alle velden zijn ingevuld.</p>
+            <a class="start-brouwen" onclick="closePopup()">Ok</a>
         </div>
     </div>
    

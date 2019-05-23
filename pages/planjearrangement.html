@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link main stylesheet -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Link pagina css -->
+    <link rel="stylesheet" href="/css/planjearrangement.css">
+
+    <title>Plan je arrangement - Gulpener</title>
+</head>
+<body>
+    
+    <section id="intro">
+        <img class="center-img" src="/images/bottle.svg" alt="">
+        <h1>plan je arrangement</h1>
+        <p>je bent er bijna! we hebben nog wat laatste informatie nodig.</p>
+    </section>
+
+    <section id="afname">
+        <h2>Afname</h2>
+        <p>hoeveel flessen wil je brouwen?</p>
+        <div class="grid-container-afname">
+            <div class="flessen">
+                <img src="/images/fles.png" alt="">
+            </div>
+            <div class="fusten">
+                <img src="/images/fust.png" alt="">
+            </div>
+            <div class="flessen-hoeveelheid">
+                <div class="slidecontainer">
+                    <input class="slider" id="slider-flessen" type="range" min="90" max="250" value="120" step="1" oninput="sliderChangeFlessen(this.value)">
+                    <p>Flessen: <output id="output-flessen">120</output></p>
+                </div>
+            </div>
+            <div class="fusten-hoeveelheid">
+                <div class="slidecontainer">
+                    <input class="slider" id="slider-fusten" type="range" min="3" max="12" value="0" step="1" oninput="sliderChangeFusten(this.value)">
+                    <p>Fusten: <output id="output-fusten">0</output></p>
+                </div>
+            </div>
+            <div class="totaalprijs">
+                <h3>Totaalprijs: <output id="output-totaalprijs"></output></h3>
+            </div>
+          </div>
+    </section>
+
+    <script src="/scripts/slider2.js"></script>
+
+</body>
+</html>

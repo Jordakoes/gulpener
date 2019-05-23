@@ -168,11 +168,22 @@ function openPopup() {
 
     //check if all fields are filled
     if(colorSelected === null || alcoholSelected === null || soortSelected === null || ingredientSelected === null) {
+        //TODO: Zorg dat niet ingevulde keuzes een rode border krijgen
+        // if(colorSelected === null) {
+        //     document.querySelector(".grid-container-kleur").style.border = "5px solid red";
+        // } else if(alcoholSelected === null) {
+        //     document.querySelector(".slider").style.border = "5px solid red";
+        // } else if (soortSelected === null) {
+        //     document.querySelector(".grid-container-soort").style.border = "5px solid red";
+        // } else if (ingredientSelected === null) {
+        //     document.querySelector(".grid-container-ingredient").style.border = "5px solid red"; 
+        // }
+
         //if not, display a popup message
-        document.querySelector('#overlay').style.display = "block";
+        document.querySelector('#overlay').style.display = "block";        
     } else {
         //if they are filled in, send the user to the next page
-        document.querySelector(".start-brouwen").href="/pages/yourbeer.html"; 
+        document.querySelector(".start-brouwen").href="/pages/jouwbier.html"; 
     }
 }
 

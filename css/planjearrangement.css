@@ -1,0 +1,79 @@
+#intro p, #afname p {
+    text-transform: lowercase;
+}
+
+/* Sizing the images */
+.fusten img, .flessen img {
+    width: 100%;
+    border: .5vw solid white;
+}
+
+/* Slider */
+
+/* Slider */
+.slidecontainer {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* FIXME: Remove all borders except for here! */
+  .slider, .slider::-webkit-slider-thumb {
+    border: .5vw solid white;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2vw;
+    background: #A27F48;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    /* border: .5vw solid white; */
+    background: #A27F48;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    background: #A27F48;
+    cursor: pointer;
+  }
+
+/* Afname section */
+.grid-container-afname {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr auto .1fr;
+    grid-template-areas: 
+    ". flessen fusten ." 
+    ". flessen-hoeveelheid fusten-hoeveelheid ." 
+    ". totaalprijs totaalprijs .";
+
+    grid-gap: 20px;
+  }
+  
+  .flessen { grid-area: flessen; }
+  
+  .fusten { grid-area: fusten; }
+  
+  .flessen-hoeveelheid { grid-area: flessen-hoeveelheid; }
+  
+  .fusten-hoeveelheid { grid-area: fusten-hoeveelheid; }
+  
+  .totaalprijs { grid-area: totaalprijs; }
