@@ -71,30 +71,60 @@ document.querySelector(".black .bg").onclick = function() {
 }
 
 //keuze soort
-document.querySelector(".soort-1").onclick = function() {
+document.querySelector(".blond").onclick = function() {
     this.classList.toggle('clicked-border');
-    localStorage.setItem("beerSoort", "fris en fruitig");
+    localStorage.setItem("beerSoort", "blond");
     //removing border
     document.querySelector(".soort-2").classList.remove('clicked-border');
-    document.querySelector(".soort-3").classList.remove('clicked-border');
 }
 
-document.querySelector(".soort-2").onclick = function() {
+document.querySelector(".dubbel").onclick = function() {
     this.classList.toggle('clicked-border');
-    localStorage.setItem("beerSoort", "licht en bitter");
+    localStorage.setItem("beerSoort", "dubbel");
     //removing border
-    document.querySelector(".soort-1").classList.remove('clicked-border');
-    document.querySelector(".soort-3").classList.remove('clicked-border');
 }
 
-document.querySelector(".soort-3").onclick = function() {
+document.querySelector(".tripel").onclick = function() {
     this.classList.toggle('clicked-border');
-    localStorage.setItem("beerSoort", "rijk en zwaar");
+    localStorage.setItem("beerSoort", "tripel");
     //removing border
-    document.querySelector(".soort-1").classList.remove('clicked-border');
-    document.querySelector(".soort-2").classList.remove('clicked-border');
 }
 
+document.querySelector(".quadrupel_gerstenwijn").onclick = function() {
+    this.classList.toggle('clicked-border');
+    localStorage.setItem("beerSoort", "quadrupel");
+    //removing border
+}
+
+document.querySelector(".porter_stout").onclick = function() {
+    this.classList.toggle('clicked-border');
+    localStorage.setItem("beerSoort", "porter");
+    //removing border
+}
+
+document.querySelector(".ipa").onclick = function() {
+    this.classList.toggle('clicked-border');
+    localStorage.setItem("beerSoort", "ipa");
+    //removing border
+}
+
+document.querySelector(".witbier").onclick = function() {
+    this.classList.toggle('clicked-border');
+    localStorage.setItem("beerSoort", "witbier");
+    //removing border
+}
+
+document.querySelector(".weizen").onclick = function() {
+    this.classList.toggle('clicked-border');
+    localStorage.setItem("beerSoort", "weizen");
+    //removing border
+}
+
+document.querySelector(".bockbier").onclick = function() {
+    this.classList.toggle('clicked-border');
+    localStorage.setItem("beerSoort", "bockbier");
+    //removing border
+}
 //keuze gulpener bier (wordt niet getoond op etiket pagina!)
 
 // TODO: deze gegevens worden niet getoond enkel opgeslagen, nog niet gebruikt!

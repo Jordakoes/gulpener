@@ -84,20 +84,29 @@
     </section>
 
     <section id="soort">
-        <h2>soort</h2>
-        <h3>Wat voor een soort bier wil je brouwen?</h3>
-        <div class="grid-container-soort">
-            <!-- TODO: Verander beer-1,2,3 naar optie-1,2,3! -->
-            <div class="soort-1">
-                <img src="/images/ff.webp" alt="">
-            </div>
-            <div class="soort-2">
-                <img src="/images/lb.webp" alt="">
-            </div>
-            <div class="soort-3">
-                <img src="/images/rz.webp" alt="">
-            </div>
+        <h2>bierstijl</h2>
+        <h3>Welke bierstijl wil je brouwen?</h3>
+        <div class="grid-container-bierstijl">
+            <div class="blond tippy-blond"><img src="/images/bierstijl-blond.webp" alt=""></div>
+            <div class="dubbel tippy-dubbel"><img src="/images/ff.webp" alt=""></div>
+            <div class="tripel tippy-tripel"><img src="/images/ff.webp" alt=""></div>
+            <div class="quadrupel_gerstenwijn tippy-quadrupel"><img src="/images/ff.webp" alt=""></div>
+            <div class="porter_stout tippy-porter"><img src="/images/ff.webp" alt=""></div>
+            <div class="ipa tippy-ipa"><img src="/images/ff.webp" alt=""></div>
+            <div class="witbier tippy-witbier"><img src="/images/ff.webp" alt=""></div>
+            <div class="weizen tippy-weizen"><img src="/images/ff.webp" alt=""></div>
+            <div class="bockbier tippy-bockbier"><img src="/images/ff.webp" alt=""></div>
         </div>
+        <!-- Tippy content -->
+        <div id="blondTippyContent">Te onderscheiden in licht en zwaar, met aan de lichte kant een zoetig/fruitig bier met een milde bitter en aan de zware kant een droge maar minder geprononceerde bitterheid dan een tripel.</div>
+        <div id="dubbelTippyContent">Een donker bier waarbij in verhouding twee keer zoveel grondstoffen gebruikt worden. Een fruitig-zoetig smaakje met een dappere bitter.</div>
+        <div id="tripleTippyContent">Kenmerkend door het hoge gehalte in alcohol en een fruitige maar kruidige smaak, wordt dit populaire bier gezien als een Belgische klassieker.</div>
+        <div id="quadrupelTippyContent">Twee termen voor in principe het zelfde bier. Een winters biertje met een hoog alcoholpercentage die past bij een stevige maaltijd.</div>
+        <div id="porterTippyContent">Tonen van koffie, chocolade en aroma’s van vanille zijn erg aanwezig in dit zware, donkere bier.</div>
+        <div id="ipaTippyContent">Afgekort van Indian Pale Ale, een populair biertje met hoppige bitters en fruitige aroma’s.</div>
+        <div id="witbierTippyContent">Een licht bier gebrouwen met de juiste verhouding gerst en tarwe waarbij vaak diverse kruiden zoals citroenschil worden toegevoegd die bij het bekende Weizen niet te vinden zijn!</div>
+        <div id="weizenTippyContent">Grotendeels gebrouwen met tarwemout dat een volle en romige, maar toch frisse smaak meegeeft.</div>
+        <div id="bockbierTippyContent">Lentebock of herfstbock gebonden aan het seizoen.</div>
     </section>
 
     <section id="gulpener-bier">
@@ -149,7 +158,13 @@
             <a class="start-brouwen" onclick="closePopup()">Ok</a>
         </div>
     </div>
+
+    <!-- Tippy js -->
+    <!-- TODO: Install as npm instead of cdn!!! -->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
    
+    <script src="/scripts/tippy.js"></script>
     <script src="/scripts/slider.js"></script>
     <script src="/scripts/ls-input.js"></script>
     

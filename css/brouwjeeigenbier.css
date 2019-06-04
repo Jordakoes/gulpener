@@ -55,8 +55,8 @@
 
 /* illustrations */
 .illustration {
-  height: 8.5vw;
-  width: 8.5vw;
+  height: 12vw;
+  width: 12vw;
   border-radius: 50%;
   background-color: #F8EEE4; 
 
@@ -125,7 +125,7 @@
   }
 
   /* FIXME: Remove all borders except for here! */
-  .bg, .slider, .beer-1, .beer-2, .beer-3, .slider::-webkit-slider-thumb, textarea, .soort-1, .soort-2, .soort-3, .ingredient-1, .ingredient-2, .ingredient-3{
+  .bg, .slider, .beer-1, .beer-2, .beer-3, .slider::-webkit-slider-thumb, textarea, .blond, .dubbel, .tripel, .quadrupel_gerstenwijn, .porter, .ipa, .witbier, .weizen, .bockbier, .ingredient-1, .ingredient-2, .ingredient-3{
     border: .5vw solid white;
   }
 
@@ -177,32 +177,60 @@
     cursor: pointer;
   }
 
-/* Soort */
-.grid-container-soort {
-    display: grid;
-    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: ". soort-1 soort-2 soort-3 .";
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    grid-gap: 20px;
-  }
+/* bierstijlen */
+.grid-container-bierstijl {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  ". blond dubbel tripel ." 
+  ". quadrupel_gerstenwijn porter_stout ipa ." 
+  ". witbier weizen bockbier .";
+  grid-gap: 20px;
+}
 
-  .soort-1 img, .soort-2 img, .soort-3 img {
-    width: 100%;
-  }
-  .soort-1 { 
-      grid-area: soort-1;
-    }
-  
-  .soort-2 { 
-      grid-area: soort-2; 
-    }
-  
-  .soort-3 { 
-      grid-area: soort-3; 
-    }
+
+.blond, .dubbel, .tripel, .quadrupel_gerstenwijn, .porter_stout, .ipa, .witbier, .weizen, .bockbier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blond:focus,  .dubbel:focus, .tripel:focus, .quadrupel_gerstenwijn:focus, .porter_stout:focus, .ipa:focus, .witbier:focus, .weizen:focus, .bockbier:focus{
+  outline: none;
+}
+
+.blond img, .dubbel img, .tripel img, .quadrupel_gerstenwijn img, .porter_stout img, .ipa img, .witbier img, .weizen img, .bockbier img {
+  width: 100%;
+}
+
+.blond { grid-area: blond;
+ }
+
+.dubbel { grid-area: dubbel; }
+
+.tripel { grid-area: tripel; }
+
+.quadrupel_gerstenwijn { grid-area: quadrupel_gerstenwijn; }
+
+.porter_stout { grid-area: porter_stout; }
+
+.ipa { grid-area: ipa; }
+
+.witbier { grid-area: witbier; }
+
+.weizen { grid-area: weizen; }
+
+.bockbier { grid-area: bockbier; }
+
+/* Tippy tooltip */
+.tippy-tooltip {
+  padding: 25px;
+  color: black;
+  background-color: #f8eee4;
+  border-radius: 0;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
 
 /* Gulpener bier */
 .grid-container-gulpener-bier {
@@ -405,7 +433,7 @@ img {
   }
 
   /* FIXME: JS Overwrites the border size, fix this in js file!*/
-  .bg, .slider, .beer-1, .beer-2, .beer-3, .slider::-webkit-slider-thumb, textarea, .soort-1, .soort-2, .soort-3, .ingredient-1, .ingredient-2, .ingredient-3 {
+    slider, .beer-1, .beer-2, .beer-3, .slider::-webkit-slider-thumb, textarea, .blond, .dubbel, .tripel, .quadrupel_gerstenwijn, .porter, .ipa, .witbier, .weizen, .bockbier, .ingredient-1, .ingredient-2, .ingredient-3{
     border: 1.5vw solid white;
   }
 
@@ -430,13 +458,21 @@ img {
   }
 
   /* Grids of the 'soort, gulpener-bieren and extra-ingredienten sections */
-  .grid-container-soort {
+  .grid-container-bierstijl {
+    display: grid;
     grid-template-columns: .1fr 1fr .1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    ". soort-1 ."
-    ". soort-2 ."
-    ". soort-3 .";
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    ". blond ." 
+    ". dubbel ." 
+    ". tripel ."
+    ". quadrupel_gerstenwijn ." 
+    ". porter_stout ."
+    ". ipa ."
+    ". witbier . "
+    ". weizen ."
+    ". bockbier .";
+    grid-gap: 20px;
   }
 
   .grid-container-gulpener-bier {
