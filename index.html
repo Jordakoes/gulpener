@@ -4,8 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brouw je eigen bier - Gulpener brouwlokaal</title>
-    <!-- Gilroy webfont -->
-    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
     <!-- Personal css -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/brouwjeeigenbier.css">
@@ -35,6 +33,7 @@
 
     <section id="kleur">
         <h2>kleur</h2>
+        <h3>kies een kleur voor je bier.</h3>
         <div class="grid-container-kleur">
             <div class="white">
                 <div class="illustration">
@@ -77,14 +76,16 @@
 
     <section id="alcohol">
         <h2>alcoholpercentage</h2>
+        <h3>kies je gewenste alcoholpercentage.</h3>
         <div class="slidecontainer">
             <input class="slider" id="slider" type="range" min="3" max="12" step="1" oninput="sliderChange(this.value)">
-            <p>Gekozen percentage: <output id="output">4</output> %</p>
+            <p><output id="output">4</output> %</p>
         </div>
     </section>
 
     <section id="soort">
         <h2>soort</h2>
+        <h3>Wat voor een soort bier wil je brouwen?</h3>
         <div class="grid-container-soort">
             <!-- TODO: Verander beer-1,2,3 naar optie-1,2,3! -->
             <div class="soort-1">
@@ -101,6 +102,7 @@
 
     <section id="gulpener-bier">
         <h2>gulpener bier</h2>
+        <h3>Welke Gulpener bieren heb je al eens gehad en vind je lekker?</h3>
         <div class="grid-container-gulpener-bier">
             <div class="beer-1">
                 <img src="/images/gulpener-1.png" alt="">
@@ -116,6 +118,7 @@
 
     <section id="extra-ingredienten">
         <h2>extra ingredienten</h2>
+        <h3>Kies een extra ingrediënt om je bier nét een beetje speciaal te maken.</h3>
         <div class="grid-container-extra-ingredienten">
             <div class="ingredient-1">
                 <img src="/images/ff2.webp" alt="">
@@ -131,6 +134,7 @@
 
     <section id="opmerkingen">
         <h2>opmerkingen</h2>
+        <h3>Zijn er nog zaken waar we rekening mee moeten houden?</h3>
         <textarea placeholder="Type hier je bericht..." name="opmerkingen" id="textarea" cols="30" rows="10"></textarea>
         <img class="center-img" src="/images/boiler.png" alt="">
         <div class="flex-center">

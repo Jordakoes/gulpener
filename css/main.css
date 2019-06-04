@@ -53,3 +53,14 @@ h3 {
 p {
   font-size: 2vw;
 }
+
+#kleur h2, #soort h2, #alcohol h2, #gulpener-bier h2, #extra-ingredienten h2, #opmerkingen h2 {
+    margin-bottom: 0;
+}
+
+
+#kleur h3, #soort h3, #alcohol h3, #gulpener-bier h3, #extra-ingredienten h3, #opmerkingen h3 {
+    text-transform: lowercase;
+    margin-top: 0;
+    font-weight: 400;
+}

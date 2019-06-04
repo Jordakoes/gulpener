@@ -1,2 +1,2 @@
 # gulpener
-Applicatie ontwikkeld voor de Gulpener bier brouwerij.
+Applicatie ontwikkeld voor de Gulpener bier brouwerij door modst.xyz
