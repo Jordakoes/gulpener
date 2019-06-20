@@ -355,17 +355,18 @@ textarea:focus {
   border: 2px solid #DF1835;
 }
 
-/* Hover zoom */
-.beer-1, .beer-2, .beer-3, .soort-1, .soort-2, .soort-3, .ingredient-1, .ingredient-2, .ingredient-3 {
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-}
-
 img {
   transition: transform .5s ease;
 }
 
-.beer-1:hover img, .beer-2:hover img, .beer-3:hover img, .soort-1:hover img, .soort-2:hover img, .soort-3:hover img, .ingredient-1:hover img, .ingredient-2:hover img, .ingredient-3:hover img {
+/* Hover animation */
+.blond:hover img, .dubbel:hover img, .tripel:hover img, .quadrupel_gerstenwijn:hover img, .porter_stout:hover img, .ipa:hover img, .witbier:hover img, .weizen:hover img, .bockbier:hover img, .beer-1:hover img, .beer-2:hover img, .beer-3:hover img, .ingredient-1:hover img, .ingredient-2:hover img, .ingredient-3:hover img {
   transform: scale(1.1);
+}
+
+/* Hover zoom border fix */
+.blond, .dubbel, .tripel, .quadrupel_gerstenwijn, .porter_stout, .ipa, .witbier, .weizen, .bockbier, .beer-1, .beer-2, .beer-3, .soort-1, .soort-2, .soort-3, .ingredient-1, .ingredient-2, .ingredient-3 {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
 /* Popup overlay */

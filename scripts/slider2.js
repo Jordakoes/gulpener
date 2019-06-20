@@ -22,5 +22,5 @@ document.getElementById('slider-fusten').value = 0;
 //tonen van de totaalprijs door...
 //document.querySelector("#output-totaalprijs").innerHTML = val + val;
 
-document.querySelector("#output-totaalprijs").innerHTML = "hellep";
+document.querySelector("#output-totaalprijs").innerHTML = "XXX";
 console.log(document.querySelector("#output-flessen").value);
