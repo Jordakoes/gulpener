@@ -155,7 +155,7 @@ document.querySelector(".beer-3").onclick = function() {
 //keuze ingredient
 document.querySelector(".ingredient-1").onclick = function() {
     this.classList.toggle('clicked-border');
-    localStorage.setItem("extraIngredient", "ingredient1");
+    localStorage.setItem("extraIngredient", "fruitig");
     //removing border
     document.querySelector(".ingredient-2").classList.remove('clicked-border');
     document.querySelector(".ingredient-3").classList.remove('clicked-border');
@@ -163,7 +163,7 @@ document.querySelector(".ingredient-1").onclick = function() {
 
  document.querySelector(".ingredient-2").onclick = function() {
      this.classList.toggle('clicked-border');
-     localStorage.setItem("extraIngredient", "ingredient2");
+     localStorage.setItem("extraIngredient", "kruidig");
      //removing border
      document.querySelector(".ingredient-1").classList.remove('clicked-border');
      document.querySelector(".ingredient-3").classList.remove('clicked-border');
@@ -171,7 +171,7 @@ document.querySelector(".ingredient-1").onclick = function() {
 
 document.querySelector(".ingredient-3").onclick = function() {
     this.classList.toggle('clicked-border');
-    localStorage.setItem("extraIngredient", "ingredient3");
+    localStorage.setItem("extraIngredient", "complex");
     //removing border
     document.querySelector(".ingredient-1").classList.remove('clicked-border');
     document.querySelector(".ingredient-2").classList.remove('clicked-border');
